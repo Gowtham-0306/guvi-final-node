@@ -8,6 +8,7 @@ const {DBconnection} =  require("./dbconfig");
 const { log } = require("node:console");
 const httpserver = express();
 // DBconnection();
+require('dotenv').config();
 httpserver.use(bodyparser.json());
 httpserver.use(cors());
 
